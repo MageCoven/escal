@@ -37,5 +37,8 @@
         "test:lib": "jest lib/*",
         "build": "tsc --build",
         "build:incremental": "tsc --incremental --tsBuildInfoFile \"./.tsbuildinfo\""
+    },
+    "engines": {
+        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
     }
 }
