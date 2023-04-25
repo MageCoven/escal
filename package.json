@@ -1,6 +1,5 @@
 {
     "name": "escal",
-    "type": "module",
     "version": "0.1.0",
     "description": "A very simplistic canvas rendering library.",
     "keywords": [
@@ -22,6 +21,9 @@
     "dependencies": {},
     "devDependencies": {
         "@types/jest": "^29.5.1",
+        "@types/node": "^18.16.0",
+        "@typescript-eslint/eslint-plugin": "^5.59.1",
+        "@typescript-eslint/parser": "^5.59.1",
         "eslint": "^8.39.0",
         "eslint-config-prettier": "^8.8.0",
         "jest": "^29.5.0",
@@ -35,7 +37,10 @@
         "test": "jest",
         "test:src": "jest src/*",
         "test:lib": "jest lib/*",
-        "build": "tsc --build",
+        "build": "tsc",
         "build:incremental": "tsc --incremental --tsBuildInfoFile \"./.tsbuildinfo\""
+    },
+    "engines": {
+        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
     }
 }
