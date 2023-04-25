@@ -1,7 +1,8 @@
-import { hello_world } from "./index";
+import { hello } from "./index";
 
 describe("Test", () => {
     test("Hello World test", () => {
-        expect(hello_world()).toBe(true);
+        expect(hello("world")).toBe(true);
+        expect(hello("planet")).toBe(false);
     });
 });

@@ -1,5 +1,5 @@
-export function hello_world() {
-    console.log("Hello World!");
+export function hello(name: string) {
+    console.log("Hello " + name + "!");
 
-    return true;
+    return name.toLowerCase() == "world";
 }
