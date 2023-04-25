@@ -35,7 +35,7 @@
         "test": "jest",
         "test:src": "jest src/*",
         "test:lib": "jest lib/*",
-        "build": "tsc --build",
+        "build": "tsc",
         "build:incremental": "tsc --incremental --tsBuildInfoFile \"./.tsbuildinfo\""
     },
     "engines": {
