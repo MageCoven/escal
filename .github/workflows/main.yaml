@@ -25,6 +25,12 @@ jobs:
             - name: Install dependencies
               run: yarn install --frozen-lockfile
 
+            - name: Format
+              run: yarn format
+
+            - name: Lint
+              run: yarn lint
+
             - name: Test src
               run: yarn test:src
 
