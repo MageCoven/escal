@@ -1,0 +1,41 @@
+{
+    "name": "escal",
+    "type": "module",
+    "version": "0.1.0",
+    "description": "A very simplistic canvas rendering library.",
+    "keywords": [
+        "simple",
+        "canvas",
+        "2d",
+        "typescript"
+    ],
+    "main": "lib/",
+    "repository": {
+        "url": "https://github.com/MageCoven/escal",
+        "type": "github"
+    },
+    "homepage": "https://github.com/MageCoven/escal",
+    "bugs": "https://github.com/MageCoven/escal/issues",
+    "author": "MageCoven <casper.lindberg.github@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "^29.5.1",
+        "eslint": "^8.39.0",
+        "eslint-config-prettier": "^8.8.0",
+        "jest": "^29.5.0",
+        "prettier": "^2.8.8",
+        "ts-jest": "^29.1.0",
+        "typescript": "^5.0.4"
+    },
+    "scripts": {
+        "format": "prettier --write .",
+        "lint": "eslint src/** --ext .js,.jsx,.ts,.d.ts",
+        "test": "jest",
+        "test:src": "jest src/*",
+        "test:lib": "jest lib/*",
+        "build": "tsc --build",
+        "build:incremental": "tsc --incremental --tsBuildInfoFile \"./.tsbuildinfo\""
+    }
+}
